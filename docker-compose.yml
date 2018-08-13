@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  appfordocker:
+    image: ${DOCKER_REGISTRY}appfordocker
+    build:
+      context: .
+      dockerfile: AppForDocker/Dockerfile
